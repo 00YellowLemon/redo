@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Hanken+Grotesk:wght@400;700;800&family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Manrope:wght@400;600;800&family=Open+Sans:wght@400;700&family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=Poppins:wght@200;400;600&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root{
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: hsl(229, 57%, 11%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Fraunces', serif;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Karla', sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'League Spartan', sans-serif;
+  font-family: 'Manrope', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Outfit', sans-serif;
+  font-family: 'Overpass', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
+}
+.absbas{
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  right: 0;
+  width: 100%;
+  height: 50%;
+
+}
+.fylo{
+  display: flex;
+  width: max(700px,80%);
+  gap: 20px;
+  z-index: 999;
+}
+p{
+  color: hsl(229, 7%, 55%);
+}
+.left{
+  border-radius: 10px;
+  border-top-right-radius: 80px;
+  font-size: 20px;
+  width: 30%;
+  color: yellow;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  padding: 50px 60px 50px 30px;
+  background-color:hsl(228, 56%, 26%);
+
+
+}
+.right{
+  background-color: hsl(228, 56%, 26%);
+  color: aliceblue;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  width: 50%;
+  font-size: 14px;
+}
+.bottom{
+  display: flex;
+}
+.bottom .img{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 5px;
+}
+.bottom{
+  display: flex;
+  gap: 15px;
+}
+.abs{
+  position: absolute;
+  background-color: hsl(243, 100%, 93%);
+  border-radius: 10px;
+  top: 0;
+  right: 30px;
+  padding: 10px;
+  border-bottom-right-radius: 0;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: grey;
+}
+.abs span{
+   font-size: 30px;
+   font-weight: 700;
+   color: hsl(229, 57%, 11%);
+}
+.absabs{
+  position: absolute;
+  border-top: 15px solid hsl(243, 100%, 93%);
+  border-left: 15px solid rgb(0, 0, 0,.1);
+  bottom: 0;
+  right:  0;
+  z-index: 23;
+  transform: translateY(100%);
+}
+.range{
+  width: 100%;
+}
+input{
+  width: 100%;
+  appearance: none;
+  background: linear-gradient(to right,blue 0%,pink 0%,black 0%,black 100%);
+  height: 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  outline: none;
+}
+input::-webkit-slider-thumb{
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  border: 1px solid hsl(335, 100%, 65%);
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+span{
+  color: white;
+}
+.belInput{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: uppercase;
+}
+.card{
+  width: 100%;
+}
+@media(max-width:768px){
+    .fylo{
+      flex-direction: column;
+      padding: 10%;
+    }
+    .right,.left{
+      width: 100%;
+    }
+    .abs{
+      position: absolute;
+      top: 100%;
+      right: 50%;
+      border-bottom-right-radius: 10px;
+      padding: 20px;
+      transform: translate(50%,-50%);
+
+    }
+    .absabs{
+      display: none;
+    }
+}
